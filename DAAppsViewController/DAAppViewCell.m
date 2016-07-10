@@ -73,15 +73,6 @@ static NSNumberFormatter *_decimalNumberFormatter = nil;
             self.separatorInset = UIEdgeInsetsZero;
         }
         
-        UIView *cellTopWhiteLine = [[UIView alloc] init];
-        cellTopWhiteLine.frame = (CGRect) {
-            .size.width = self.frame.size.width,
-            .size.height = 1.0f
-        };
-        cellTopWhiteLine.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        cellTopWhiteLine.backgroundColor = [UIColor whiteColor];
-        [self addSubview:cellTopWhiteLine];
-        
         UIImageView *cellImageShadowView = [[UIImageView alloc] init];
         cellImageShadowView.frame = (CGRect) {
             .origin.x = 11.0f,

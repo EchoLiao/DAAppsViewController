@@ -36,14 +36,6 @@
     if (!DA_IS_IOS7) {
         self.tableView.backgroundColor = DARK_BACKGROUND_COLOR;
     }
-    
-    UIView *tableFooterView = [[UIView alloc] init];
-    tableFooterView.backgroundColor = [UIColor whiteColor];
-    tableFooterView.frame = (CGRect) {
-        .size.width = self.tableView.frame.size.width,
-        .size.height = 1.0f
-    };
-    self.tableView.tableFooterView = tableFooterView;
 }
 
 
