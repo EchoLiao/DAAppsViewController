@@ -97,13 +97,13 @@ static NSNumberFormatter *_decimalNumberFormatter = nil;
         _nameLabel = [[UILabel alloc] init];
         _nameLabel.font = [UIFont systemFontOfSize:12.0f];
         _nameLabel.backgroundColor = [UIColor clearColor];
-        _nameLabel.textColor = [UIColor blackColor];
+        _nameLabel.textColor = [[DAAppViewCell appearance] tintColor] ? [[DAAppViewCell appearance] tintColor] : [UIColor blackColor];
         [self addSubview:_nameLabel];
         
         _genreLabel = [[UILabel alloc] init];
         _genreLabel.font = [UIFont systemFontOfSize:10.0f];
         _genreLabel.backgroundColor = [UIColor clearColor];
-        _genreLabel.textColor = [UIColor darkGrayColor];
+        _genreLabel.textColor = [DAAppViewCell appearance].selectedBackgroundView.tintColor ? [DAAppViewCell appearance].selectedBackgroundView.tintColor : [UIColor darkGrayColor];
         [self addSubview:_genreLabel];
         
         _starImageView = [[UIImageView alloc] init];
@@ -119,7 +119,7 @@ static NSNumberFormatter *_decimalNumberFormatter = nil;
         
         _noRatingsLabel = [[UILabel alloc] init];
         _noRatingsLabel.font = [UIFont systemFontOfSize:10.0f];
-        _noRatingsLabel.textColor = [UIColor darkGrayColor];
+        _noRatingsLabel.textColor = [DAAppViewCell appearance].selectedBackgroundView.tintColor ? [DAAppViewCell appearance].selectedBackgroundView.tintColor : [UIColor darkGrayColor];
         _noRatingsLabel.backgroundColor = [UIColor clearColor];
         _noRatingsLabel.text = NSLocalizedString(@"No Ratings",);
         _noRatingsLabel.hidden = YES;
@@ -133,7 +133,7 @@ static NSNumberFormatter *_decimalNumberFormatter = nil;
         
         _ratingsLabel = [[UILabel alloc] init];
         _ratingsLabel.font = [UIFont systemFontOfSize:10.0f];
-        _ratingsLabel.textColor = [UIColor darkGrayColor];
+        _ratingsLabel.textColor = [DAAppViewCell appearance].selectedBackgroundView.tintColor ? [DAAppViewCell appearance].selectedBackgroundView.tintColor : [UIColor darkGrayColor];
         _ratingsLabel.backgroundColor = [UIColor clearColor];
         [self addSubview:_ratingsLabel];
         
