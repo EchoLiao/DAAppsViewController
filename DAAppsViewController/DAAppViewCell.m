@@ -147,7 +147,7 @@ static NSNumberFormatter *_decimalNumberFormatter = nil;
         _purchaseButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         
         if (DA_IS_IOS7) {
-            UIColor *titleColor = [UIColor colorWithRed:0.0f green:0.49f blue:0.96f alpha:1.0f];
+            UIColor *titleColor = [UIView appearance].tintColor ? [UIView appearance].tintColor : [UIColor colorWithRed:0.0f green:0.49f blue:0.96f alpha:1.0f];
             [_purchaseButton setTitleColor:titleColor forState:UIControlStateNormal];
             [_purchaseButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
 
